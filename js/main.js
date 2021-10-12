@@ -8,19 +8,11 @@ let tasks_count = document.querySelector(".todo-app .stats .count span");
 
 let tasks_completed = document.querySelector(".stats .complted span");
 
-/**
- *
- */
-
 stats();
 
 no_tasks();
 
 auto_focus();
-
-/**
- *
- */
 
 function auto_focus() {
   input.focus();
