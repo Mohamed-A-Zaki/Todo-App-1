@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  padding: 5px 0;
+  margin-left: 10px;
+  width: 70px;
+  color: #000;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+.todo-app {
+  width: 800px;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+}
+.todo-app .add-task {
+  padding: 15px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin: 15px 0;
+  display: flex;
+}
+.todo-app .add-task input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+  flex: 1;
+}
+.todo-app .add-task button {
+  background-color: #00bcd4;
+}
+.todo-app .tasks {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+}
+.todo-app .tasks .task,
+.todo-app .tasks .no-tasks {
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-app .tasks .no-tasks {
+  justify-content: center;
+  color: #121212;
+}
+.todo-app .tasks .task.done {
+  opacity: 0.5;
+}
+.todo-app .tasks .task .text {
+  font-size: 20px;
+}
+.todo-app .tasks .task button {
+  background-color: #e91e63;
+}
+.todo-app .stats {
+  background-color: #f1f1f1;
+  margin: 10px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.todo-app .stats .count span,
+.todo-app .stats .complted span {
+  background-color: #ffc107;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  color: #333;
+}
