@@ -96,6 +96,12 @@ add_btn.addEventListener("click", function () {
   stats();
 });
 
+document.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    add_btn.click();
+  }
+});
+
 function stats() {
   tasks_count.innerHTML = tasks_container.childElementCount;
   tasks_completed.innerHTML = document.querySelectorAll(".task.done").length;
